@@ -1,0 +1,6 @@
+framework module wbzLabelTool {
+  umbrella header "wbzLabelTool-umbrella.h"
+
+  export *
+  module * { export * }
+}

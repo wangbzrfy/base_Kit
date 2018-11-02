@@ -60,12 +60,12 @@
 		843AD5C8C9B192B090A879F7 /* Pods_wbzLabelTool_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wbzLabelTool_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8EB2BF6F481CA2F8C174FB8C /* Pods-wbzLabelTool_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wbzLabelTool_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-wbzLabelTool_Tests/Pods-wbzLabelTool_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		90B6143A116E6213569F5E37 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		A0EC302EE1BB35B0DC620C23 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		90B6143A116E6213569F5E37 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		A0EC302EE1BB35B0DC620C23 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		A34CAC1E6B02E8FCFE3B36F0 /* Pods_wbzLabelTool_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wbzLabelTool_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9457FB48EFAE7BE7C2F6485 /* Pods-wbzLabelTool_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wbzLabelTool_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-wbzLabelTool_Example/Pods-wbzLabelTool_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		BD57D6F37CD807A2492D87D7 /* Pods-wbzLabelTool_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wbzLabelTool_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-wbzLabelTool_Example/Pods-wbzLabelTool_Example.release.xcconfig"; sourceTree = "<group>"; };
-		C9209A2C96156C1BF8810B46 /* wbzLabelTool.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = wbzLabelTool.podspec; path = ../wbzLabelTool.podspec; sourceTree = "<group>"; };
+		C9209A2C96156C1BF8810B46 /* wbzLabelTool.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = wbzLabelTool.podspec; path = ../wbzLabelTool.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		CCA49986A1B9D84E9335FB93 /* Pods-wbzLabelTool_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wbzLabelTool_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-wbzLabelTool_Tests/Pods-wbzLabelTool_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -299,15 +299,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-wbzLabelTool_Tests-checkManifestLockResult.txt",
 			);
@@ -321,15 +317,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-wbzLabelTool_Example-checkManifestLockResult.txt",
 			);
@@ -343,15 +335,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-wbzLabelTool_Example/Pods-wbzLabelTool_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/wbzLabelTool/wbzLabelTool.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/wbzLabelTool.framework",
 			);

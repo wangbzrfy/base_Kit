@@ -1,0 +1,16 @@
+PODS:
+  - wbzLabelTool (0.1.0)
+
+DEPENDENCIES:
+  - wbzLabelTool (from `../`)
+
+EXTERNAL SOURCES:
+  wbzLabelTool:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  wbzLabelTool: 623da498696dcc598c1622ae18f5f88f8c0d7388
+
+PODFILE CHECKSUM: 8b67820e8d6a59acadf4524b4e2e914e01656565
+
+COCOAPODS: 1.5.3
