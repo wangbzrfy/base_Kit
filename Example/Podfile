@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'wbzLabelTool_Example' do
+  pod 'wbzLabelTool', :path => '../'
+
+  target 'wbzLabelTool_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
