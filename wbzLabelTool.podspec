@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'wbzLabelTool'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = 'A short description of wbzLabelTool.'
 
 # This description is used to generate tags and improve search results.
@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/wangbz/wbzLabelTool'
+  s.homepage         = 'https://github.com/wangbzrfy/base_Kit'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'wangbz' => 'wangbz@qianbaocard.com' }
-  s.source           = { :git => 'https://github.com/wangbz/wbzLabelTool.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/wangbzrfy/base_Kit.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'

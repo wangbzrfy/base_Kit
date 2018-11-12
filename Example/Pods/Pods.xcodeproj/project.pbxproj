@@ -15,6 +15,8 @@
 		5F25B136733EEE2D0E61E265F0EF9E16 /* Pods-wbzLabelTool_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EC655933B34D60662B7AA126603E6B2A /* Pods-wbzLabelTool_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A83BAB37CAD9A00E4EED776B8678BDE6 /* Pods-wbzLabelTool_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FD4F0D2AA489DA0649820826FEBB448A /* Pods-wbzLabelTool_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ADD0C2A68E141554D4E3AA3F14192D42 /* wbzLabelTool-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A5DF2903BA73CEC146682D02365C814F /* wbzLabelTool-dummy.m */; };
+		CE93474F21995964006FA829 /* NSString+Verify.h in Headers */ = {isa = PBXBuildFile; fileRef = CE93474D21995963006FA829 /* NSString+Verify.h */; };
+		CE93475021995964006FA829 /* NSString+Verify.m in Sources */ = {isa = PBXBuildFile; fileRef = CE93474E21995964006FA829 /* NSString+Verify.m */; };
 		E042A901D740C6FDEE369574D1F74C12 /* Pods-wbzLabelTool_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BAEC513043C6C69CC3AD01BFFCC3DD1B /* Pods-wbzLabelTool_Tests-dummy.m */; };
 		F29ADDE1B6862B81C9A0E56A8E8B1BE6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
 /* End PBXBuildFile section */
@@ -37,7 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		144027C7171A00DE79FDF1E2D16D1F7D /* Pods_wbzLabelTool_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_wbzLabelTool_Tests.framework; path = "Pods-wbzLabelTool_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		144027C7171A00DE79FDF1E2D16D1F7D /* Pods_wbzLabelTool_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wbzLabelTool_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		15B7D600D846E915943A0D239554C4A3 /* Pods-wbzLabelTool_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-wbzLabelTool_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		1FB897C80926EC70850B48F88F393677 /* wbzLabelTool-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "wbzLabelTool-prefix.pch"; sourceTree = "<group>"; };
 		203A18D9201812A897018898B776C282 /* Pods-wbzLabelTool_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-wbzLabelTool_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -47,29 +49,31 @@
 		642937BF5702B2D7C67854F4833B3E6C /* Pods-wbzLabelTool_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-wbzLabelTool_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		7C4A5AF74C16D35275B5F7249F78C574 /* Pods-wbzLabelTool_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-wbzLabelTool_Example-dummy.m"; sourceTree = "<group>"; };
 		7FEF44BDE311170023F55DA4A5556135 /* Pods-wbzLabelTool_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-wbzLabelTool_Tests.modulemap"; sourceTree = "<group>"; };
-		89286D9C69783333A7340D14C44A8F97 /* wbzLabelTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = wbzLabelTool.framework; path = wbzLabelTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		89286D9C69783333A7340D14C44A8F97 /* wbzLabelTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = wbzLabelTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		959E2DEB38F53B82BC27FE185A50A103 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = wbzLabelTool/Classes/ReplaceMe.m; sourceTree = "<group>"; };
 		9785746065B2265D55B0398ADFD396F7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		97CD8C8CD7BBD9564D81C413DE60EFCB /* Pods_wbzLabelTool_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_wbzLabelTool_Example.framework; path = "Pods-wbzLabelTool_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		97CD8C8CD7BBD9564D81C413DE60EFCB /* Pods_wbzLabelTool_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wbzLabelTool_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		98DCDC71682F820B202BE7C00BA00DDF /* Pods-wbzLabelTool_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-wbzLabelTool_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		A5DF2903BA73CEC146682D02365C814F /* wbzLabelTool-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "wbzLabelTool-dummy.m"; sourceTree = "<group>"; };
 		AB9D8FE1A2D5B10988727BCE5C3927D7 /* Pods-wbzLabelTool_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-wbzLabelTool_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		B163470AF6729DD0838EA5B08A30CA23 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5A492AC62745A1B7B094AF77B9E8E84 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B805D3CFA0EE22DC8EB82E3614863140 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		B805D3CFA0EE22DC8EB82E3614863140 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BAEC513043C6C69CC3AD01BFFCC3DD1B /* Pods-wbzLabelTool_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-wbzLabelTool_Tests-dummy.m"; sourceTree = "<group>"; };
 		C0013B304844A9C6F9D0F594B8F7746A /* Pods-wbzLabelTool_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-wbzLabelTool_Example-frameworks.sh"; sourceTree = "<group>"; };
 		C4A851CACFE5A58008C2924CFA0DE108 /* Pods-wbzLabelTool_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-wbzLabelTool_Example.modulemap"; sourceTree = "<group>"; };
 		C5D7DF978F75F6A0121DA25453F9FF73 /* Pods-wbzLabelTool_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-wbzLabelTool_Example-resources.sh"; sourceTree = "<group>"; };
 		C60FA59B9049524673A40333048AC6EB /* Pods-wbzLabelTool_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-wbzLabelTool_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		CE93474D21995963006FA829 /* NSString+Verify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Verify.h"; path = "wbzLabelTool/Classes/NSString+Verify.h"; sourceTree = "<group>"; };
+		CE93474E21995964006FA829 /* NSString+Verify.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Verify.m"; path = "wbzLabelTool/Classes/NSString+Verify.m"; sourceTree = "<group>"; };
 		D6AC8F2DEA79ECA6DF08187B7F778A09 /* wbzLabelTool.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = wbzLabelTool.modulemap; sourceTree = "<group>"; };
 		D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		E533D23038122AAFFFE098097B962B23 /* Pods-wbzLabelTool_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-wbzLabelTool_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		E57F04FEE3EB33D32C9C895A5C2AB2F0 /* wbzLabelTool.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = wbzLabelTool.xcconfig; sourceTree = "<group>"; };
 		EC655933B34D60662B7AA126603E6B2A /* Pods-wbzLabelTool_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-wbzLabelTool_Example-umbrella.h"; sourceTree = "<group>"; };
-		EFC5D2653BA213959AE00E6A618D7176 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		F373F18E00EB74CE841A06A19F01734A /* wbzLabelTool.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = wbzLabelTool.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		EFC5D2653BA213959AE00E6A618D7176 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		F373F18E00EB74CE841A06A19F01734A /* wbzLabelTool.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = wbzLabelTool.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		FACEFF36BD167D3BDB69499383970A92 /* Pods-wbzLabelTool_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-wbzLabelTool_Tests-resources.sh"; sourceTree = "<group>"; };
 		FD4F0D2AA489DA0649820826FEBB448A /* Pods-wbzLabelTool_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-wbzLabelTool_Tests-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -165,6 +169,8 @@
 		9A5633E3278745574E9CB0049287BDEE /* wbzLabelTool */ = {
 			isa = PBXGroup;
 			children = (
+				CE93474D21995963006FA829 /* NSString+Verify.h */,
+				CE93474E21995964006FA829 /* NSString+Verify.m */,
 				959E2DEB38F53B82BC27FE185A50A103 /* ReplaceMe.m */,
 				B1BEA18283AC771FDCE2F78F8B5C2395 /* Pod */,
 				84745EAE9EA52394B02DCABF1C63AF46 /* Support Files */,
@@ -251,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1EABA319B7E45CF75A7D151146CDB0D0 /* wbzLabelTool-umbrella.h in Headers */,
+				CE93474F21995964006FA829 /* NSString+Verify.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,6 +379,7 @@
 			files = (
 				3E82C6370914B2239DEC4DFAB6D65C33 /* ReplaceMe.m in Sources */,
 				ADD0C2A68E141554D4E3AA3F14192D42 /* wbzLabelTool-dummy.m in Sources */,
+				CE93475021995964006FA829 /* NSString+Verify.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -597,8 +605,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
